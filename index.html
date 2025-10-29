@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rahul Singh Rana — Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Rahul Singh Rana — Angular & Drupal developer. Projects, skills, blog and contact." />
+
+  <style>
+    :root{
+      --bg:#000; --card:#0c0c0c; --muted:#b9b9b9;
+      --accent:#f3b033;
+      font-family: "Poppins", Arial;
+    }
+    body{margin:0;background:var(--bg);color:white;line-height:1.6}
+    header{display:flex;justify-content:center;background:#050505;border-bottom:1px solid #111;position:sticky;top:0;z-index:10}
+    nav{display:flex;gap:30px;padding:18px}
+    nav a{text-decoration:none;color:white;font-weight:500;transition:.2s}
+    nav a:hover{color:var(--accent);text-decoration:underline}
+
+    .hero{display:flex;justify-content:space-between;padding:60px 10%;align-items:center;flex-wrap:wrap}
+    .hero img{width:310px;border-radius:14px;border:3px solid var(--accent);}
+    h1{font-size:42px;color:var(--accent);margin:0}
+    .btns{display:flex;gap:14px;margin-top:15px}
+    .btn{padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none}
+    .btn.primary{background:var(--accent);color:black}
+    .btn.secondary{border:1px solid white;color:white}
+
+    section{padding:60px 10%;max-width:1100px;margin:auto}
+    h2{color:var(--accent);margin-bottom:20px;font-size:30px}
+
+    .about-grid{display:flex;gap:40px;flex-wrap:wrap}
+    .info p{margin:6px 0;color:var(--muted)}
+
+    .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .bar{height:8px;background:#222;border-radius:6px;overflow:hidden}
+    .bar div{height:8px;background:var(--accent)}
+
+    .project-list{display:grid;gap:18px}
+    .project-item{background:#0a0a0a;padding:14px;border-radius:10px;border:1px solid #111}
+    footer{text-align:center;color:var(--muted);padding:20px;border-top:1px solid #111;margin-top:40px}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Hello! I'm Rahul Singh Rana</h1>
+    <p>Full‑Stack Web Developer specializing in Angular, Drupal, UI architecture, and scalable systems.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Hire Me</a>
+      <a class="btn secondary" href="#projects">My Works</a>
+    </div>
+  </div>
+  <img src="profileImage.jpg" alt="Rahul"/>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="info">
+      <p>5+ years of hands‑on experience working with Angular, JavaScript, Node, SQL, jQuery, HTML, TypeScript, CSS, JSON, and Jasmine/Karma for Angular unit testing. Solid understanding of Angular (v4+) and React practices along with commonly used ecosystem modules.</p>
+      <p>Familiar with browser storage mechanisms, API integrations, IndexedDB, and multiple web services generally used in modern applications. Worked across multiple Angular‑based platforms with direct experience managing APIs at frontend layer.</p>
+      <p>Experienced writing unit tests in Angular using Jasmine & Karma, ensuring quality and component stability. Familiar with CI/CD flows, Jenkins, Azure Dashboards, GitHub integration, and code repository workflows.</p>
+      <p>Good understanding of version control (Git) and branching strategies. Worked on Drupal custom modules, PHP integrations, and multiple backend‑driven web features. Comfortable across Windows, Linux VMs (Ubuntu), and diverse OS environments.</p>
+      <p><b>Email:</b> rahulsinghrana361@gmail.com</p>
+      <a class="btn primary" href="resume.pdf" download>Download CV</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div>Angular<div class="bar"><div style="width:92%"></div></div></div>
+    <div>JavaScript<div class="bar"><div style="width:96%"></div></div></div>
+    <div>TypeScript<div class="bar"><div style="width:95%"></div></div></div>
+    <div>RxJS<div class="bar"><div style="width:90%"></div></div></div>
+    <div>SQL<div class="bar"><div style="width:85%"></div></div></div>
+    <div>Node.js<div class="bar"><div style="width:80%"></div></div></div>
+    <div>jQuery<div class="bar"><div style="width:85%"></div></div></div>
+    <div>HTML<div class="bar"><div style="width:98%"></div></div></div>
+    <div>CSS<div class="bar"><div style="width:95%"></div></div></div>
+    <div>JSON<div class="bar"><div style="width:92%"></div></div></div>
+    <div>PHP<div class="bar"><div style="width:70%"></div></div></div>
+    <div>Jasmine/Karma<div class="bar"><div style="width:88%"></div></div></div>
+    <div>React<div class="bar"><div style="width:80%"></div></div></div>
+    <div>CI/CD<div class="bar"><div style="width:78%"></div></div></div>
+    <div>Azure<div class="bar"><div style="width:72%"></div></div></div>
+    <div>Git<div class="bar"><div style="width:90%"></div></div></div>
+    <div>Drupal<div class="bar"><div style="width:88%"></div></div></div>
+    <div>Drupal Custom Modules<div class="bar"><div style="width:82%"></div></div></div>
+  </div></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <div class="project-item"><b>Alight: Digital Services Wealth</b><br>Accelerated withdrawals by 15% with 98% unit test coverage.</div>
+    <div class="project-item"><b>Image Library (Alight)</b><br>Increased download efficiency by 50% and reduced latency by 30%.</div>
+    <div class="project-item"><b>Status Tracker (Alight)</b><br>Improved transaction tracking accuracy, resolving 95% user bugs and increasing satisfaction by 12%.</div>
+    <div class="project-item"><b>LocalJobs (Vasitum)</b><br>Developed recruiter, admin, and candidate apps, boosting usage by 20% with NgRx workflows.</div>
+    <div class="project-item"><b>Marketplace Platform</b><br>Built store discovery and product explorer, improving engagement and product visibility by 50%.</div>
+    <div class="project-item"><b>Meraas Property Search</b><br>Developed property navigation experience, improving property check efficiency by 30%.</div>
+    <div class="project-item"><b>Angular PWA for E‑Commerce</b><br>Offline-ready PWA with optimized bundle sizes, SSR for SEO-sensitive pages.</div>
+    <div class="project-item"><b>Migration to Drupal 10</b><br>Led enterprise migration, improving stability and reducing CMS maintenance by 60%.</div>
+  </div>
+    <div class="project-item"><b>Image Library</b><br>Increased download efficiency by 50% and reduced latency by 30%.</div>
+    <div class="project-item"><b>Meraas Dubai</b><br>Improved property search performance by 30%.</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Want to discuss a project or hire me?</p>
+  <a class="btn primary" href="mailto:rahulsinghrana361@gmail.com">Send Email</a>
+<div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+    <a class="btn secondary" href="https://github.com/rahulsinghrana361" target="_blank">GitHub</a>
+    <a class="btn secondary" href="https://www.linkedin.com/in/rahul-singh-rana-06a984166/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Rahul Singh Rana — Built with ❤️ • Available for freelance & full‑time
+</footer>
+
+</body>
+</html>
